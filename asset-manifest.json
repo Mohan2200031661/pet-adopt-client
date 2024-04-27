@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/petfriender-client/static/css/main.499214fd.css",
+    "main.js": "/petfriender-client/static/js/main.6d994b0a.js",
+    "static/js/787.c477353e.chunk.js": "/petfriender-client/static/js/787.c477353e.chunk.js",
+    "index.html": "/petfriender-client/index.html",
+    "main.499214fd.css.map": "/petfriender-client/static/css/main.499214fd.css.map",
+    "main.6d994b0a.js.map": "/petfriender-client/static/js/main.6d994b0a.js.map",
+    "787.c477353e.chunk.js.map": "/petfriender-client/static/js/787.c477353e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.499214fd.css",
+    "static/js/main.6d994b0a.js"
+  ]
+}
