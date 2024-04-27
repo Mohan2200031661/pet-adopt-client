@@ -1,5 +1,5 @@
 import { Form, useSearchParams } from "react-router-dom";
-import config from "../../../config";
+
 export const SearchBar = ({
   speciesQuery,
   sortQuery,
