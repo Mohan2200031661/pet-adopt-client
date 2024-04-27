@@ -5,7 +5,6 @@ import {
   Route,
 } from "react-router-dom";
 import { RootLayout } from "./components/root";
-import config from '../config';
 import { PetSearchPage } from "./components/petSearch/petSearchPage";
 import { PetPage } from "./components/petSearch/petPage";
 import { ErrorPage } from "./components/error";
