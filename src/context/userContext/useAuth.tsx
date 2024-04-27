@@ -86,18 +86,19 @@ export function AuthProvider({
     });
   };
 
-  const memoedValue = useMemo(
-    () => ({
-      user,
-      message,
-      error,
-      loading,
-      register,
-      login,
-      logout,
-    }),
-    [user, message, error, loading]
-  );
+ const memoedValue = useMemo(
+  () => ({
+    user,
+    message,
+    error,
+    loading,
+    register,
+    login,
+    logout,
+  }),
+  [user, message, error, loading, register, login, logout]
+);
+
 
   return (
     <AuthContext.Provider value={memoedValue}>
