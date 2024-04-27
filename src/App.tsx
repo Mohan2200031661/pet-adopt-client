@@ -5,7 +5,6 @@ import {
   Route,
 } from "react-router-dom";
 import { RootLayout } from "./components/root";
-import { Homepage } from "./components/homepage";
 import { PetSearchPage } from "./components/petSearch/petSearchPage";
 import { PetPage } from "./components/petSearch/petPage";
 import { ErrorPage } from "./components/error";
@@ -15,7 +14,6 @@ import { LoginFrom } from "./components/user/loginForm";
 import { MyAccount } from "./components/user/myAccount";
 import { CartPage } from "./components/checkout/cartPage";
 import { CheckoutPage } from "./components/checkout/checkoutPage";
-import { About } from "./components/about";
 import { fetchPets as petsLoader, fetchPet as petLoader } from "./services/api";
 
 export const router = createBrowserRouter(
@@ -29,9 +27,7 @@ export const router = createBrowserRouter(
         <Route path="/users/login" element={<LoginFrom />} />
         <Route path="/users/my-account" element={<MyAccount />} />
         <Route path="/cart" element={<CartPage />} />
-        {/* <Route path="/accessories" element={<AccessoriesPage/>} /> */}
         <Route path="/checkout" element={<CheckoutPage />} />
-        <Route path="/about" element={<About />} />
       </Route>
     </Route>
   )
