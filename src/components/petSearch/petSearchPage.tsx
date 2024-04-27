@@ -4,7 +4,6 @@ import { useLoaderData, useSearchParams } from "react-router-dom";
 import { SearchBar } from "./searchBar";
 import { PetCard } from "./petCard";
 import { Pagination } from "./pagination";
-import config from "../../../config";
 export const PetSearchPage: Function = () => {
   let [searchParams, setSearchParams] = useSearchParams();
 
