@@ -1,5 +1,5 @@
 import { json } from "react-router-dom";
-import config from "../../config";
+
 //Fetch all pets.
 export const fetchPets = async () => {
   const query = window.location.search;
