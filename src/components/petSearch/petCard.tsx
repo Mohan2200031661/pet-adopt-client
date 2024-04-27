@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { Link } from "react-router-dom";
 import CartContext from "../../context/cartContext/cartContext";
 import { multipleSpeciesStringConverter } from "../helpers";
-import config from "../../../config";
+
 export const PetCard = (pet: PetCard) => {
   const { cartItems, addToCart, removeFromCart } = useContext(CartContext);
 
