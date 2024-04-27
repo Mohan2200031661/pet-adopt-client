@@ -86,17 +86,17 @@ export function AuthProvider({
     });
   };
 
- const memoedValue = useMemo(
+const memoedValue = useMemo(
   () => ({
     user,
     message,
     error,
     loading,
-    register,
-    login,
-    logout,
+    register: useCallback(register, []),
+    login: useCallback(login, []),
+    logout: useCallback(logout, []),
   }),
-  [user, message, error, loading, register, login, logout]
+  [user, message, error, loading]
 );
 
 
