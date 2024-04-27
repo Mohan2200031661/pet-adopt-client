@@ -1,4 +1,5 @@
 import useAuth from "../../context/userContext/useAuth";
+import config from "../../../config";
 export const MyAccount = () => {
   const { user, message, error, logout } = useAuth();
 

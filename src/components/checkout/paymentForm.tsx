@@ -1,5 +1,6 @@
 import { useState, useContext } from "react";
 import CartContext from "../../context/cartContext/cartContext";
+import config from "../../../config";
 import {
   CardNumberElement,
   CardCvcElement,

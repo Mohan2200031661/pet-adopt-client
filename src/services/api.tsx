@@ -1,5 +1,5 @@
 import { json } from "react-router-dom";
-
+import config from "../../config";
 //Fetch all pets.
 export const fetchPets = async () => {
   const query = window.location.search;
@@ -19,13 +19,13 @@ export const fetchPet = async ({
   params: any;
 }) => {
   const id = params.id;
-  const res = await fetch(`/api/v1/pets/${id}`);
+  const res = await fetch(`config/api/v1/pets/${id}`);
   return res;
 };
 
 //Authorize users.
 export const registerUser = async (user: RegisterUser) => {
-  const res = await fetch("/users/register", {
+  const res = await fetch("config/users/register", {
     method: "POST",
     headers: { "Content-type": "application/json" },
     body: JSON.stringify(user),
@@ -40,7 +40,7 @@ export const registerUser = async (user: RegisterUser) => {
 };
 
 export const loginUser = async (user: LoginUser) => {
-  const res = await fetch("/users/login", {
+  const res = await fetch("config/users/login", {
     method: "POST",
     headers: { "Content-type": "application/json" },
     body: JSON.stringify(user),
@@ -55,7 +55,7 @@ export const loginUser = async (user: LoginUser) => {
 };
 
 export const getUser = async () => {
-  const res = await fetch("/users/isUserAuth", {
+  const res = await fetch("config/users/isUserAuth", {
     credentials: "include",
     headers: { "Content-type": "application/json" },
   });
@@ -68,7 +68,7 @@ export const getUser = async () => {
 };
 
 export const logoutUser = async () => {
-  const res = await fetch("/users/logout", {
+  const res = await fetch("config/users/logout", {
     credentials: "include",
     headers: { "Content-type": "application/json" },
   });

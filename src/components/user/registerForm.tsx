@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import useAuth from "../../context/userContext/useAuth";
-
+import config from "../../../config";
 export const RegisterForm = () => {
   const { register, message, error, loading } = useAuth();
 

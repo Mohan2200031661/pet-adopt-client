@@ -1,4 +1,5 @@
 import { useSearchParams } from "react-router-dom";
+import config from "../../../config";
 export const Pagination = (props: any) => {
   const [searchParams] = useSearchParams();
 

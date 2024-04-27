@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useLoaderData } from "react-router-dom";
 
 import { CarouselItem } from "./carouselItem";
-
+import config from "../../../config";
 export const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [windowCountOffset, setWindowCountOffset] = useState(1);

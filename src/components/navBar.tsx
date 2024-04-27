@@ -2,6 +2,7 @@ import { useState, useContext } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import CartContext from "../context/cartContext/cartContext";
 import useAuth from "../context/userContext/useAuth";
+import config from "../../config";
 export const Navbar = () => {
   const location = useLocation();
   const [navbarOpen, setNavbarOpen] = useState(false);
