@@ -30,9 +30,9 @@ export function AuthProvider({
   const navigate = useNavigate();
   const location = useLocation();
 
-  useEffect(() => {
-    if (error) setError(null);
-  }, [location.pathname]);
+ useEffect(() => {
+  if (error) setError(null);
+}, [location.pathname, error]);
 
   useEffect(() => {
     getUser()
